@@ -21,7 +21,13 @@ function($stateProvider, $urlRouterProvider) {
     .state('posts', {
       url: '/posts/{id}',
       templateUrl: 'posts/_posts.html',
-      controller: 'PostsCtrl'
+      controller: 'PostsCtrl',
+      resolve: {
+        post: ['$stateParams', 'posts', function($stateParams, posts) {
+          post = posts.get($stateParams.id);
+          return post;
+        }]
+      }
     });
 
   $urlRouterProvider.otherwise('home');
