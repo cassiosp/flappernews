@@ -1,0 +1,22 @@
+{
+  "name": "flappernews",
+  "homepage": "https://github.com/cassiosp/flappernews",
+  "authors": [
+    "Cassio Pereira <cassio.pereira@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
