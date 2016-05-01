@@ -71,4 +71,8 @@ function($scope, posts){
       });
       $scope.body = '';
     };
+
+    $scope.incrementUpvotes = function(comment) {
+      comment.upvotes += 1;
+    };
 }]);
