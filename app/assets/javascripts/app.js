@@ -75,4 +75,5 @@ function($scope, posts){
     $scope.incrementUpvotes = function(comment) {
       comment.upvotes += 1;
     };
-}]);
+  }
+]);
