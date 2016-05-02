@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    render json: Post.create(post_params)
+    render json: Post.create(post_params.merge(user_id: current_user.id))
   end
 
   def show
